@@ -1,0 +1,36 @@
+/* src/components/Content.css */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-side {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .right-side img {
+    max-width: 100%;
+    width: 30rem;
+    height: auto;
+  }
+  .Title {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color:black;
+    background-color:#B9FF66;
+    width: 60%;
+    border-radius: 20px;
+  }
+
+  .SubTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    color:black;
+  }
+  

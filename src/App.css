@@ -1,0 +1,14 @@
+
+
+
+.content {
+  padding: 0 60px;
+  z-index: 2;
+  /* Menambahkan padding 20px di sebelah kiri dan kanan */
+}
+
+.informasi-section {
+  margin-bottom: 60px;
+}
+
+

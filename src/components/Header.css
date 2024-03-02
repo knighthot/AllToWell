@@ -1,0 +1,20 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .logo img {
+    width: 75px; /* Sesuaikan dengan lebar logo Anda */
+    height: auto;
+  }
+  
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color:black
+  }
+  

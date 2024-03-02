@@ -1,0 +1,29 @@
+
+
+.informasi-title {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    color:black;
+    vertical-align: middle;
+  }
+  
+  .icon {
+    color: yellow;
+    vertical-align: middle;
+  }
+
+  .informasi-title p{
+    font-size: 1rem;
+    padding-left: 0.1rem;
+    color: black;
+    align-items: center;
+    display: flex;
+    vertical-align: middle;
+    font-weight: normal;
+  }
+
+  
+  

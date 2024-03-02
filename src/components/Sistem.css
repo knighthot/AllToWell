@@ -1,0 +1,56 @@
+/* Sistem.css */
+
+.sistem-card {
+    width: 100%;
+    height: 250px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    overflow: visible; /* Allow content to overflow outside the card */
+    position: relative; /* Set position to relative */
+    z-index: 1;
+    padding: 1%
+  }
+  
+  .sistem-content {
+    display: flex;
+    flex-direction: row; /* Set the direction to row for a horizontal layout */
+    width: 80%;
+  }
+  
+  .sistem-text {
+    flex: 1;
+    padding: 20px;
+   
+  }
+  
+  .sistem-image {
+    flex-shrink: 0;
+  }
+  
+  .sistem-image img {
+    width: 430px; /* Adjust the width property to control the image size */
+    z-index: 5;
+    margin-top: -110px;
+    position: absolute;
+    margin-left: -50px;
+   
+  }
+
+  #Title {
+    background-color: #B9FF66;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 25px;
+    width: 90%;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+
+  .sistem-text p{
+    margin-top: 10px;
+    font-weight: 600;
+   
+  }
+  
