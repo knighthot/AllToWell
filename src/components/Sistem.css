@@ -1,6 +1,5 @@
-/* Sistem.css */
 
-.sistem-card {
+.sistem-cardd {
     width: 100%;
     height: 250px;
     margin: 20px auto;
@@ -13,44 +12,45 @@
     padding: 1%
   }
   
-  .sistem-content {
+  .sistem-contentt {
     display: flex;
     flex-direction: row; /* Set the direction to row for a horizontal layout */
-    width: 80%;
+    width: 100%;
   }
   
-  .sistem-text {
+  .sistem-textt {
     flex: 1;
     padding: 20px;
    
   }
   
-  .sistem-image {
+  .sistem-imagee {
     flex-shrink: 0;
   }
   
-  .sistem-image img {
+  .sistem-imagee img {
     width: 430px; /* Adjust the width property to control the image size */
     z-index: 5;
     margin-top: -110px;
     position: absolute;
-    margin-left: -50px;
+    margin-left: -300px;
    
   }
 
-  #Title {
+  #title {
     background-color: #B9FF66;
     font-weight: bold;
     font-size: 2rem;
     border-radius: 25px;
-    width: 90%;
+    width: 50%;
     padding-left: 10px;
     margin-left: 10px;
   }
 
-  .sistem-text p{
+  .sistem-textt p{
     margin-top: 10px;
     font-weight: 600;
+    width: 80%;
    
   }
   
