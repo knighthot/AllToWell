@@ -54,3 +54,64 @@
    
   }
   
+
+  /* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .sistem-cardd {
+    height: auto; /* Tinggi kartu diatur menjadi otomatis agar sesuai dengan konten */
+    padding: 10px; /* Padding lebih kecil pada perangkat mobile */
+  }
+
+  .sistem-contentt {
+    flex-direction: column; /* Mengubah tata letak menjadi vertikal untuk perangkat mobile */
+    align-items: center; /* Pusatkan konten secara horizontal pada perangkat mobile */
+  }
+
+  .sistem-textt {
+    padding: 10px; /* Padding lebih kecil pada perangkat mobile */
+    text-align: center; /* Pusatkan teks pada perangkat mobile */
+  }
+
+  .sistem-imagee img {
+    width: 100%; /* Gambar mengambil lebar penuh pada perangkat mobile */
+    margin-top: 0; /* Hilangkan margin atas pada perangkat mobile */
+    margin-left: 0; /* Hilangkan margin kiri pada perangkat mobile */
+    position: static; /* Set posisi gambar kembali ke posisi statis */
+  }
+
+  #title {
+    width: 100%; /* Lebar judul mengambil lebar penuh pada perangkat mobile */
+    margin-left: 0; /* Hilangkan margin kiri pada perangkat mobile */
+    margin-top: 10px; /* Beri jarak atas pada perangkat mobile */
+  }
+
+  .sistem-textt p {
+    width: 100%; /* Lebar teks mengambil lebar penuh pada perangkat mobile */
+    margin-top: 10px; /* Beri jarak atas pada perangkat mobile */
+  }
+}
+
+/* Media Query for smaller mobile devices */
+@media (max-width: 480px) {
+  .sistem-textt p {
+    font-size: 0.6rem; /* Ukuran font teks lebih kecil untuk perangkat mobile 480px */
+  }
+
+  h2#title {
+   font-size: 20px;
+    text-align: center; /* Pusatkan teks pada perangkat mobile */
+  }
+
+  .sistem-cardd {
+    width: 90%;
+   height: 120vw;
+    
+  }
+
+  .sistem-imagee img {
+    width: 100%; /* Gambar mengambil lebar penuh pada perangkat mobile */
+    margin-top: -80px; /* Hilangkan margin atas pada perangkat mobile */
+    margin-left: 0; /* Hilangkan margin kiri pada perangkat mobile */
+    position: static; /* Set posisi gambar kembali ke posisi statis */
+  }
+}

@@ -93,10 +93,13 @@ export default function Home() {
           <Content />
           <Informasi className="informasi-section" />
           <Task className="task-section" />
+          <Sistem />
+      <MateriPembelajaran />
+
           {/* 
           
-          <Sistem />
-          <MateriPembelajaran />
+          
+         
           <Card />
           <Team />
           <AnimeHoverEffect style={{flex:1}}/>

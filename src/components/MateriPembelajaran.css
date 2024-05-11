@@ -1,0 +1,65 @@
+
+.materi-pembelajaran-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  
+  .materi-pembelajaran-title {
+    margin: 0;
+    background-color: #B9FF66;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 22%;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .materi-pembelajaran-text {
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .materi-pembelajaran-container {
+      margin-top: 50px; /* Menyesuaikan margin atas untuk tampilan pada perangkat mobile */
+      margin-bottom: 50px; /* Menyesuaikan margin bawah untuk tampilan pada perangkat mobile */
+    }
+  
+    .materi-pembelajaran-title {
+      font-size: 1.5rem; /* Ukuran font judul lebih kecil untuk tampilan pada perangkat mobile */
+      width: 100%; /* Lebar judul mengambil lebar penuh pada tampilan mobile */
+      padding: 10px; /* Padding lebih kecil pada tampilan mobile */
+      text-align: center; /* Pusatkan judul pada tampilan mobile */
+    }
+  
+    .materi-pembelajaran-text {
+      font-size: 0.9rem; /* Ukuran font teks lebih kecil untuk tampilan pada perangkat mobile */
+      text-align: center; /* Pusatkan teks pada tampilan mobile */
+    }
+  }
+
+  /* Responsiveness for Mobile */
+  @media (max-width: 480px) {
+    .materi-pembelajaran-container {
+        margin-top: 10px;
+    width: 100%;
+    margin-bottom: 30px; /* Menyesuaikan margin bawah untuk tampilan pada perangkat mobile 480px */
+    }
+  
+    .materi-pembelajaran-title {
+      font-weight: bold;
+      width: 20%;
+      padding: 3px;
+      font-size: 0.5rem; /* Ukuran font judul lebih kecil lagi untuk tampilan pada perangkat mobile 480px */
+    }
+    
+    .materi-pembelajaran-text {
+      font-size: 0.4rem; /* Ukuran font teks lebih kecil lagi untuk tampilan pada perangkat mobile 480px */
+    }
+  }
+  
