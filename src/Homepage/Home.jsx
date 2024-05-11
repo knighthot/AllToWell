@@ -95,12 +95,12 @@ export default function Home() {
           <Task className="task-section" />
           <Sistem />
       <MateriPembelajaran />
-
+ <Card />
           {/* 
           
           
          
-          <Card />
+         
           <Team />
           <AnimeHoverEffect style={{flex:1}}/>
           <TugasKelompok/>

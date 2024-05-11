@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoIosArrowDropdown, IoIosArrowDropup } from 'react-icons/io';
-
+import '../components/Card.css';
 const Card = ({ number, title, content, backgroundColor }) => {
   const [isExpanded, setExpanded] = useState(false);
 
@@ -10,26 +10,19 @@ const Card = ({ number, title, content, backgroundColor }) => {
 
   return (
     <div
-      style={{
-        width: '100%',
-        border: '1px solid black',
-        cursor: 'pointer',
-        marginBottom: 20,
-        background: backgroundColor,
-        borderRadius: '25px',
-        transition: 'all 0.6s',
-        height: isExpanded ? 'auto' : '70px',
-        padding: isExpanded ? '30px' : '20px',
-      }}
-      onClick={handleToggleExpand}
+    className="card-container" // Menambah kelas CSS untuk gaya Card
+    style={{
+      backgroundColor: backgroundColor
+    }}
+    onClick={handleToggleExpand}
     >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottomWidth: isExpanded ? 1 : 0, borderColor: 'black', paddingBottom: isExpanded ? 10 : 0 }}>
-        {isExpanded ? number && <h3 style={{ marginLeft: 30, fontSize: 24, fontWeight: 'bold', color: '#555' }}> <span style={{ color: 'black' }}>{title}</span></h3> : number && <h3 style={{ marginLeft: 30, fontSize: 24, fontWeight: 'bold', color: '#555' }}>0{number}. <span style={{ color: 'black' }}>{title}</span></h3>  }
+        <div className="card-header"> {/* Menambah kelas CSS untuk gaya header */}
+        {isExpanded ? number && <h3 className="card-title">{title}</h3> : number && <h3 className="card-title">0{number}. {title}</h3>}
         {isExpanded ? <IoIosArrowDropup size={30} /> : <IoIosArrowDropdown size={30} />}
       </div>
       {isExpanded && (
-        <div>
-          <p style={{ width: "60%", fontWeight: 500, color: 'black',marginTop:10 }}>{content}</p>
+        <div className="card-content"> {/* Menambah kelas CSS untuk gaya konten */}
+          <p>{content}</p>
         </div>
       )}
     </div>
