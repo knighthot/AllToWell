@@ -145,3 +145,113 @@
 #taskfooter2{
   margin-top: 5px;
 }
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 40px); /* Lebar kartu mengambil lebar layar dengan margin 20px pada setiap sisi */
+    margin: 20px 0; /* Mengatur margin atas dan bawah */
+  }
+
+  .taskTitle,
+  .taskTitleII {
+    border-radius: 10px;
+    height: 30px;
+    width: auto; /* Lebar judul mengikuti konten */
+    margin: 10px; /* Mengurangi margin */
+    font-size: 0.8rem; /* Ukuran font lebih kecil untuk tampilan mobile */
+  }
+
+  .task-content {
+    padding: 0 20px; /* Padding horizontal */
+  }
+
+  .task-footer {
+    justify-content: flex-end; /* Mengatur posisi elemen footer ke kanan */
+  }
+
+  .task-footer h2 {
+    margin-left: 0; /* Menghilangkan margin kiri */
+    margin-right: 10px; /* Memberikan margin kanan */
+  }
+
+  .task-footer img {
+    margin-left: 0; /* Menghilangkan margin kiri */
+    margin-right: 10px; /* Memberikan margin kanan */
+  }
+}
+
+/* Media Query for smaller mobile devices */
+@media (max-width: 480px) {
+  .task-header{
+    width: 80%;
+  }
+  .card {
+    width: calc(100% - 50px); /* Lebar kartu mengambil lebar layar dengan margin 20px pada setiap sisi */
+    margin: 20px 0; /* Mengatur margin atas dan bawah */
+  }
+
+  .taskTitle,
+  .taskTitleII {
+    padding: 2px;
+    width: auto; /* Lebar judul mengikuti konten */
+    margin: 10px; /* Mengurangi margin */
+    font-size: 0.8rem; /* Ukuran font lebih kecil lagi untuk tampilan mobile */
+  }
+
+  h1.taskTitle{
+    margin-top: 1rem;
+  }
+  .card h3 {
+    width: 1%;
+    margin-top: 1rem;
+    font-size: 8px;
+    font-weight: bold;
+    
+  }
+
+ 
+  .task-content {
+    padding: 0 10px; /* Padding horizontal lebih kecil */
+  }
+
+ div#taskheader2.task-header{
+  width: 90%;
+  margin-top: 5px;
+ }
+  .task-footer  a{
+    color: black !important;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .task-footer img {
+   margin-top: 1rem;
+    margin-right: 5px; /* Memberikan margin kanan lebih kecil */
+  }
+
+  #subTitle{
+    margin-top: 10px;
+   font-size: 8px;
+    padding-left: 0;
+  }
+
+  
+  #subTitle2{
+    margin-top: 15px;
+    color:white;
+   font-size: 15px;
+    padding-left: 0;
+  }
+
+   #subTitle3{
+    margin-top: 20px;
+    color:rgb(2, 2, 2);
+    font-size: 15px;
+    padding-left: 0;
+  }
+  img#image1{
+    margin: 0;
+  }
+}

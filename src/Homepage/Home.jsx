@@ -93,6 +93,8 @@ export default function Home() {
           <Content />
           <Informasi className="informasi-section" />
           <Task className="task-section" />
+          {/* 
+          
           <Sistem />
           <MateriPembelajaran />
           <Card />
@@ -103,10 +105,10 @@ export default function Home() {
           <TugasIndividu/>
           <Individu/>
           <TagSummary/>
-          <Summary/>	
+          <Summary/>	 */}
         </div>
       </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   );
 }

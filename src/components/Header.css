@@ -18,3 +18,35 @@
     color:black
   }
   
+
+  @media (max-width: 768px) {
+ 
+  
+    .logo img {
+      width: 50px; /* Sesuaikan dengan lebar logo untuk tampilan di perangkat mobile */
+    }
+  
+    .name {
+      font-size: 1.5rem; /* Sesuaikan ukuran font untuk tampilan di perangkat mobile */
+      padding-left: 0; /* Hilangkan padding kiri */
+      margin-top: 10px; /* Beri margin atas */
+    }
+  }
+  
+  /* Responsiveness for Mobile */
+  @media (max-width: 480px) {
+    .header {
+      padding-top: 20px; /* Padding lebih kecil untuk perangkat mobile */
+      padding-left: 0;
+      padding-bottom: 5px;
+    }
+  
+    .logo img {
+      width: 30px; /* Lebar logo lebih kecil untuk tampilan di perangkat mobile */
+    }
+  
+    .name {
+      font-size: 1rem;
+      margin-block: auto;
+    }
+  }

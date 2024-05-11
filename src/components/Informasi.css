@@ -26,4 +26,31 @@
   }
 
   
+  @media (max-width: 768px) {
+    .informasi-title {
+      font-size: 0.9rem; /* Ukuran font lebih kecil untuk tampilan di perangkat mobile */
+    }
+    
+    .icon {
+      font-size: 0.9rem; /* Ukuran font ikon lebih kecil untuk tampilan di perangkat mobile */
+    }
+    
+    .informasi-title p {
+      font-size: 0.9rem; /* Ukuran font teks informasi lebih kecil untuk tampilan di perangkat mobile */
+    }
+  }
   
+  /* Responsiveness for smaller mobile devices */
+  @media (max-width: 480px) {
+    .informasi-title {
+      font-size: 0.8rem; /* Ukuran font lebih kecil lagi untuk tampilan di perangkat mobile 480px */
+    }
+    
+    .icon {
+      font-size: 0.5rem; /* Ukuran font ikon lebih kecil lagi untuk tampilan di perangkat mobile 480px */
+    }
+    
+    .informasi-title p {
+      font-size: 0.6rem; /* Ukuran font teks informasi lebih kecil lagi untuk tampilan di perangkat mobile 480px */
+    }
+  }

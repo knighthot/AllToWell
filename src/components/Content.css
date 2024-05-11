@@ -34,3 +34,61 @@
     color:black;
   }
   
+  
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px; /* Padding lebih kecil untuk perangkat mobile */
+    }
+  
+    .left-side {
+      width: 100%; /* Konten kiri mengambil lebar penuh pada tampilan mobile */
+      padding-right: 0; /* Hilangkan padding kanan */
+      margin-bottom: 20px; /* Beri jarak bawah antara konten kiri dan kanan */
+    }
+  
+    .right-side img {
+      width: 100%; /* Gambar mengambil lebar penuh pada tampilan mobile */
+    }
+  
+    .Title {
+      width: 100%; /* Judul mengambil lebar penuh pada tampilan mobile */
+      border-radius: 0; /* Hilangkan border-radius pada judul */
+      margin-bottom: 10px; /* Beri jarak bawah pada judul */
+      font-size: 3rem; /* Ukuran judul lebih kecil untuk tampilan mobile */
+    }
+  
+    .SubTitle {
+      font-size: 1rem; /* Ukuran SubTitle lebih kecil untuk tampilan mobile */
+    }
+  }
+  
+  /* Responsiveness for Mobile */
+  @media (max-width: 480px) {
+    .content-container {
+      padding: 10px;
+    }
+    .Title {
+    font-size: 2.8rem; /* Ukuran judul lebih kecil untuk tampilan di perangkat mobile 480px */
+    font-weight: bold;
+    padding-left: 0.8rem;
+    color:black;
+    background-color:#B9FF66;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 0;
+    }
+  
+    .SubTitle {
+      font-size: 0.7rem; /* Ukuran SubTitle lebih kecil untuk tampilan di perangkat mobile 480px */
+      font-weight: bold;
+    }
+
+    .right-side img {
+      max-width: 100%;
+      width: 30rem;
+      height: auto;
+      margin-left: 30px;
+    }
+  }

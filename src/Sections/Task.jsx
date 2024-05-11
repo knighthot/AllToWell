@@ -23,14 +23,14 @@ const Task = () => {
           <a href={downloadLink1} download>
             <h2 style={{flexDirection:'row'}}><RxDownload size={30} /> Unduh</h2>
             </a>
-            <img src={gambar1} style={{width:200}} />
+            <img src={gambar1} style={{width:180}} />
           </div>
         </div>
       </div>
 
       <div className="card" id='card2'>
         <div className="task-content">
-          <div className="task-header">
+          <div className="task-header" id='taskheader2'>
             <h1 className='taskTitleII'>TASK II</h1>
             <h3 id='subTitle'>MAKALAH TENTANG KAJAHATAN SIBER (PENIPUAN PHISING)</h3>
           </div>
@@ -47,7 +47,7 @@ const Task = () => {
         <div className="task-content">
           <div className="task-header">
             <h1 className='taskTitleII'>TASK III</h1>
-            <h3 className='h3'id='h3'>DATABASE!!!</h3>
+            <h3 className='h3'id='subTitle2'>DATABASE!!!</h3>
           </div>
           <div className="task-footer" id='taskfooter2'>
           <a href={downloadLink3} download>
@@ -62,11 +62,11 @@ const Task = () => {
         <div className="task-content">
           <div className="task-header">
             <h1 className='taskTitle'>TASK IV</h1>
-            <h3 className='h3' id='h4'>COMING SOON!!</h3>
+            <h3 className='h3' id='subTitle3'>COMING SOON!!</h3>
           </div>
           <div className="task-footer">
-          <a href={downloadLink4} download>
-            <h2 style={{flexDirection:'row'}}><RxDownload size={30} /> Unduh</h2>
+          <a style={{color: 'black', textDecoration: 'none'}} href={downloadLink4} download>
+            <h2 style={{flexDirection:'row',}}><RxDownload size={30} /> Unduh</h2>
             </a>
             <img src={gambar3} style={{width:200}} />
           </div>
