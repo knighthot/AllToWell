@@ -46,7 +46,7 @@
   /* Responsiveness for Mobile */
   @media (max-width: 480px) {
     .materi-pembelajaran-container {
-        margin-top: 10px;
+     margin-top: 10px;
     width: 100%;
     margin-bottom: 30px; /* Menyesuaikan margin bawah untuk tampilan pada perangkat mobile 480px */
     }
@@ -59,7 +59,9 @@
     }
     
     .materi-pembelajaran-text {
-      font-size: 0.4rem; /* Ukuran font teks lebih kecil lagi untuk tampilan pada perangkat mobile 480px */
+        width: 80%;
+      font-size: 1rem; /* Ukuran font teks lebih kecil lagi untuk tampilan pada perangkat mobile 480px */
+      text-align: left;
     }
   }
   
