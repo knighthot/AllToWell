@@ -78,7 +78,7 @@ const App = () => {
       namatugas: [
         "Tugas Artikel",
         "Tugas Database",
-        "Tugas Kriptografi"
+        "Tugas Kriptografi Modern"
       ],
       pdfLink: [
         "https://drive.google.com/file/d/1aXM5WfzF4GB8M8a5DbAmiANLh8uA49tW/preview",
@@ -87,7 +87,7 @@ const App = () => {
       videoLink: [
         "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
         "https://drive.google.com/file/d/1YdTHMP51M-Ck0Zfcs9tUbrDd_xW6D7D2/preview",
-        "https://drive.google.com/file/d/1YdTHMP51M-Ck0Zfcs9tUbrDd_xW6D7D2/preview" // Add more video URLs here
+        "https://drive.google.com/file/d/1k48aCKrKgNdY26NaB_OEXLPlrwb7CFAm/preview" // Add more video URLs here
       ]
     },
 
@@ -99,7 +99,8 @@ const App = () => {
       backgroundColor: "#B9FF66",
       namatugas: [
         "Tugas Artikel",
-        "Tugas Database"
+        "Tugas Database",
+        "Tugas Kriptografi Modern"
       ],
       pdfLink: [
         "https://drive.google.com/file/d/1jyRAeBfJDMMlM17IR8XLg-Fzh_oQhdC5/preview",
@@ -108,8 +109,8 @@ const App = () => {
       videoLink: [
         "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
          "https://drive.google.com/file/d/1sYR3SM_U3D5IHQhhDN2ye8Wxk8HI4Bxg/preview",
-        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
-       
+         "https://drive.google.com/file/d/15fVNvGckiZcK-HR7dOJnDWvMKoel9BGK/preview",
+    
         
       ]// Add your video link here
     },
@@ -119,7 +120,8 @@ const App = () => {
       backgroundColor: "#B9FF66",
       namatugas: [
         "Tugas Artikel",
-        "Tugas Database"
+        "Tugas Database",
+        "Tugas Kriptografi Modern"
       ],
       pdfLink: [
         "https://drive.google.com/file/d/1MW2sY-tMxS9Z0CBsyxNLF1y78ZiBleSy/preview",
@@ -128,7 +130,7 @@ const App = () => {
       videoLink:[ 
         "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
         "https://drive.google.com/file/d/1WVeILMJcgsh6li0K9AEr19vrVAnMnGeQ/preview",
-        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+        "https://drive.google.com/file/d/19M1DpZLqXIVLtxQzW6WXNGBJJPXAl0bu/preview",
         
     ]// Add your video link here
     },
@@ -138,7 +140,8 @@ const App = () => {
       backgroundColor: "#B9FF66",
       namatugas: [
         "Tugas Artikel",
-        "Tugas Database"
+        "Tugas Database",
+        "Tugas Kriptografi Modern"
       ],
       pdfLink: [
         "https://drive.google.com/file/d/1mEqENpXsXo1n9YyKX4ik3IQP-MjA_bCy/preview",
