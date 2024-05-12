@@ -27,7 +27,7 @@ const images = [Baskara, Fikram, Alida, Ayung];
 
 export default function Home() {
   const [rainItems, setRainItems] = useState([]);
- 
+
   useEffect(() => {
     const interval = setInterval(() => {
       const randomImage = images[Math.floor(Math.random() * images.length)];
@@ -69,8 +69,8 @@ export default function Home() {
   return (
     <div className="App">
       <div style={{ paddingLeft: '30px', paddingRight: '30px' }}>
-         <Header  />
-        
+        <Header />
+
       </div>
       <div style={{ position: 'relative', overflow: 'hidden', height: 'auto' }}>
         <animated.div style={rainAnimations}>
@@ -94,24 +94,22 @@ export default function Home() {
           <Informasi className="informasi-section" />
           <Task className="task-section" />
           <Sistem />
-      <MateriPembelajaran />
- <Card />
-          {/* 
-          
-          
-         
-         
+          <MateriPembelajaran />
+          <Card />
           <Team />
-          <AnimeHoverEffect style={{flex:1}}/>
-          <TugasKelompok/>
+          <AnimeHoverEffect style={{ flex: 1 }} />
+    <TugasKelompok/>
           <Kelompok/>
+          {/*  
+         
+         
           <TugasIndividu/>
           <Individu/>
           <TagSummary/>
           <Summary/>	 */}
         </div>
       </div>
-        {/* <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-
+import '../components/MateriPembelajaran.css'; // Mengimport file CSS
 const Team = () => {
   return (
-    <div style={{display:'flex',flexDirection:'row',alignItems:'center',marginLeft:25,marginTop:90,marginBottom:50}}>
-      <h1 style={{ margin: '0',backgroundColor:'#B9FF66',fontSize: 20,borderRadius:25,width:"11%",padding:10,fontWeight: 'bold'}}>OUR TEAM</h1>
-      <p style={{ margin: '0', marginLeft: '10px' }}>Perkenalkan Tim Kami</p>
+    <div className='materi-pembelajaran-container '>
+      <h1 className='materi-pembelajaran-title'>OUR TEAM</h1>
+      <p className='materi-pembelajaran-text'>Perkenalkan Tim Kami</p>
     </div>
   );
 }

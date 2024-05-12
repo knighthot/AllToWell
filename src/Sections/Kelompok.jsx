@@ -11,7 +11,10 @@ const Kelompok = () => {
       <div className="sistem-content">
         <div className="sistem-text">
           <h2 id='Title'>Penipuan Phising</h2>
-           <embed style={{ margin: 'auto',alignItems:'center',justifyContent:'center' }} src={pdfFile} type="application/pdf" width="60%" height="600px" />
+          <div className="embedded-pdf-container">
+            <embed className="embedded-pdf" src={pdfFile} type="application/pdf" />
+          </div>
+
          </div>
       </div>
     </div>

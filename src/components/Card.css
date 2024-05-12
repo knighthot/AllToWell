@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    border-bottom: 1px solid black;
     padding-bottom: 10px;
   }
   
@@ -45,10 +45,20 @@
   
   @media (max-width: 480px) {
     .card-title {
-      font-size: 18px; /* Mengurangi ukuran font untuk perangkat dengan lebar layar hingga 480px */
+      font-size: 12px; /* Mengurangi ukuran font untuk perangkat dengan lebar layar hingga 480px */
     }
   
     .card-content {
-      font-size: 12px; /* Mengurangi ukuran font konten untuk perangkat dengan lebar layar hingga 480px */
+      font-size: 8px; /* Mengurangi ukuran font konten untuk perangkat dengan lebar layar hingga 480px */
     }
+
+    .card-content {
+      width: 60%;
+      font-weight: 500;
+      color: black;
+      margin-top: 10px;
+      margin-left: 30px;
+      height: auto;
+    }
+    
   }
