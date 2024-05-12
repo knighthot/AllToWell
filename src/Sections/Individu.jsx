@@ -57,11 +57,12 @@ const Individu = ({ number, Nama, backgroundColor, namatugas, pdfLink, videoLink
               </div>
             </div>
           ))}
-           {videoLink && 
-        <div className="video-item">
-          <Video source={videoLink} />
+         {videoLink.map((video, index) => (
+        <div className="video-item" key={index}>
+          <h4>{namatugas[index]}</h4>
+          <Video source={video} />
         </div>
-      }
+      ))}
         </div>
       </div>
     )}
@@ -76,13 +77,18 @@ const App = () => {
       backgroundColor: "#B9FF66",
       namatugas: [
         "Tugas Artikel",
-        "Tugas Database"
+        "Tugas Database",
+        "Tugas Kriptografi"
       ],
       pdfLink: [
         "https://drive.google.com/file/d/1aXM5WfzF4GB8M8a5DbAmiANLh8uA49tW/preview",
-        'https://drive.google.com/file/d/1d8lm4qarrlhSe9ptGkXdYaP4aGy2eoHj/preview'
+        "https://drive.google.com/file/d/1d8lm4qarrlhSe9ptGkXdYaP4aGy2eoHj/preview"
       ],
-      videoLink: "https://drive.google.com/file/d/1YdTHMP51M-Ck0Zfcs9tUbrDd_xW6D7D2/preview" // Add your video link here
+      videoLink: [
+        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+        "https://drive.google.com/file/d/1YdTHMP51M-Ck0Zfcs9tUbrDd_xW6D7D2/preview",
+        "https://drive.google.com/file/d/1YdTHMP51M-Ck0Zfcs9tUbrDd_xW6D7D2/preview" // Add more video URLs here
+      ]
     },
 
     // Add more PDF data objects here as needed
@@ -99,7 +105,13 @@ const App = () => {
         "https://drive.google.com/file/d/1jyRAeBfJDMMlM17IR8XLg-Fzh_oQhdC5/preview",
         'https://drive.google.com/file/d/1dbe71yHRHPNVlm31llbnXQt4z7HCXs4q/preview'
       ],
-      videoLink: "https://drive.google.com/file/d/1sYR3SM_U3D5IHQhhDN2ye8Wxk8HI4Bxg/preview" // Add your video link here
+      videoLink: [
+        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+         "https://drive.google.com/file/d/1sYR3SM_U3D5IHQhhDN2ye8Wxk8HI4Bxg/preview",
+        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+       
+        
+      ]// Add your video link here
     },
 
     {
@@ -113,7 +125,12 @@ const App = () => {
         "https://drive.google.com/file/d/1MW2sY-tMxS9Z0CBsyxNLF1y78ZiBleSy/preview",
         'https://drive.google.com/file/d/1WoNiTvW0HfaRSgv4ZWd-hRZiNtIMntIP/preview'
       ],
-      videoLink: "https://drive.google.com/file/d/1WVeILMJcgsh6li0K9AEr19vrVAnMnGeQ/preview" // Add your video link here
+      videoLink:[ 
+        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+        "https://drive.google.com/file/d/1WVeILMJcgsh6li0K9AEr19vrVAnMnGeQ/preview",
+        "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+        
+    ]// Add your video link here
     },
 
     {
@@ -127,7 +144,11 @@ const App = () => {
         "https://drive.google.com/file/d/1mEqENpXsXo1n9YyKX4ik3IQP-MjA_bCy/preview",
         'https://drive.google.com/file/d/1e0eLtpyQyjTkO4Q73OSIJSnlAG9S09yr/preview'
       ],
-      videoLink: "https://drive.google.com/file/d/1HU8pqjBTs31lwdnsuD0F3-BV00uJYdHr/preview" // Add your video link here
+      videoLink: [
+      "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+      "https://drive.google.com/file/d/1HU8pqjBTs31lwdnsuD0F3-BV00uJYdHr/preview",
+      "https://www.youtube.com/embed/R0T4a3jpKfk?si=pJNaqdFQRkoXyjkF",
+       ]// Add your video link here
     },
   ];
 
