@@ -102,16 +102,11 @@ export default function Home() {
           <Kelompok/>
           <TugasIndividu/>
           <Individu/>
-          {/*  
-         
-         
-          
-          
           <TagSummary/>
-          <Summary/>	 */}
+          <Summary/>	
         </div>
       </div>
-      {/* <Footer /> */}
+     <Footer /> 
     </div>
   );
 }

@@ -68,8 +68,27 @@
     height: 600px;
 }
 
-  
+#pdf1 {
+  margin: auto;
+  display: block;
+  justify-content: center;
+ height: 500px;
+}
 
+.sistem-text p {
+  margin-bottom: 10px;
+}
+
+.sistem-text ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.sistem-text ul li {
+  margin-left: 20px;
+  position: relative;
+}
   @media only screen and (max-width: 768px) {
     .sistem-content {
         flex-direction: column; /* Adjust direction to column for a vertical layout */
@@ -107,4 +126,25 @@
     .sistem-image img {
         max-width: 100%; /* Ensure image fills the card width */
     }
+
+    .sistem-text {
+      padding: 10px; /* Memberi ruang padding untuk konten */
+  }
+
+  .sistem-text p {
+      font-size: 8px; /* Mengurangi ukuran font paragraf */
+  }
+
+  .sistem-text ul {
+      padding-left: 15px; 
+      font-size: 8px;
+      /* Mengurangi padding kiri untuk daftar */
+  }
+
+  #pdf1 {
+    margin: auto;
+    display: block;
+    justify-content: center;
+   height: 200px;
+  }
 }

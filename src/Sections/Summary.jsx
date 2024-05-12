@@ -13,7 +13,7 @@ const Summary = () => {
                 <div className="sistem-content">
                     <div className="sistem-text">
                         <h2 id='Title'>Summary Pertama</h2>
-                        <embed style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile} type="application/pdf" width="60%" height="300px" />
+                        <embed id="pdf1" style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile} type="application/pdf" width="60%" height="300px" />
                         <p>
                             Keamanan Komputer adalah pencegahan dari serangan serta mendeteksi pengguna komputer atau pengakses jaringan yang tidak bertanggung jawab dan tidak dikenali dalam sistem komputer.
                             Mudahnya adalah usaha melindungi aset dan menjaga privasi dari para cracker yang menyerang.
@@ -47,7 +47,7 @@ const Summary = () => {
                 <div className="sistem-content">
                     <div className="sistem-text">
                         <h2 id='Title'>Summary Kedua</h2>
-                        <embed style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile2} type="application/pdf" width="60%" height="300px" />
+                        <embed id="pdf1" style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile2} type="application/pdf" width="60%" height="300px" />
 
                         <ul>
                             <ul style={{ fontWeight: 'bold', marginTop: 10 }}>Beberapa aspek – aspek keamanan komputer :</ul>
@@ -113,7 +113,7 @@ const Summary = () => {
                 <div className="sistem-content">
                     <div className="sistem-text">
                         <h2 id='Title'>Summary Ketiga</h2>
-                        <embed style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile3} type="application/pdf" width="60%" height="300px" />
+                        <embed id="pdf1" style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile3} type="application/pdf" width="60%" height="300px" />
                         <p>
                         Web security adalah segala tindakan dengan tujuan mengamankan dan melindungi website dari serangan internet yang biasanya dilakukan oleh hacker atau penjahat dunia maya. Pada dasarnya, web security adalah tindakan untuk melindungi website, atau disebut juga dengan cyber security.
                         </p>
@@ -135,7 +135,7 @@ const Summary = () => {
                 <div className="sistem-content">
                     <div className="sistem-text">
                         <h2 id='Title'>Summary Keempat</h2>
-                        <embed style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile4} type="application/pdf" width="60%" height="300px" />
+                        <embed id="pdf1" style={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }} src={pdfFile4} type="application/pdf" width="60%" height="300px" />
                         <p>
                             Sistem pengaman Database yaitu Kumpulan data yang disimpan dan diatur atau diorganisasikan sehingga data tersebut dapat diambil atau dicari dengan mudah dan efisien.
                         </p>

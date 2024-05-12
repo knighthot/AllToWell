@@ -1,0 +1,117 @@
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    margin: 0;
+  }
+  
+  .leftText .all {
+    font-size: 40px;
+    color: #B9FF66;
+    font-weight: bold;
+     margin-bottom:50px;
+  }
+
+  .leftText .well {
+  background-color: #B9FF66;
+  margin-top: 100px;
+    color:#333;
+     border-radius:25px;
+     font-size:28px;
+     width:14%;
+     padding:10px;
+     font-weight: bold;
+     position:absolute;
+     margin-right:100px;
+     left:100px;
+  }
+  /* Gaya untuk konten sebelah kiri */
+  .leftContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Gaya untuk gambar sebelah kiri */
+  .leftImage {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    border-radius: 50%;
+    margin-bottom: 90px; /* Anda mungkin ingin menyesuaikan margin bottom ini */
+  }
+  
+  /* Gaya untuk teks sebelah kiri */
+  .leftText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  
+  /* Gaya untuk gambar sebelah kanan */
+  .rightContent {
+    display: flex;
+  }
+  
+  /* Gaya untuk gambar pertama di sebelah kanan */
+  .rightImage {
+    width: 100%;
+    height: 230px;
+    margin-top: 10px; /* Anda mungkin ingin menyesuaikan margin top ini */
+    border-radius: 50%;
+  }
+  
+  /* Gaya untuk gambar kedua di sebelah kanan */
+  .rightImage1 {
+    width: 100%;
+    height: 180px;
+    margin-right: 100px;
+    border-radius: 50%;
+    margin-top: 60px; /* Anda mungkin ingin menyesuaikan margin top ini */
+  }
+  
+
+  @media (max-width: 480px) {
+    .footer {
+        margin: 0;
+        padding: 20px; /* Padding lebih sedikit di perangkat mobile */
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        height: auto; /* Menghapus ketinggian tetap */
+        align-items: flex-start; /* Mengatur item ke kiri */
+      }
+    
+      .leftContent,
+      .rightContent {
+        width: 100%; /* Lebar penuh untuk konten di perangkat mobile */
+        justify-content: center; /* Mengatur konten ke tengah */
+        margin-bottom: 20px; /* Ruang antara konten di perangkat mobile */
+      }
+    
+      .leftText {
+        margin-left: 0; /* Menghapus margin kiri */
+        align-items: center; /* Mengatur teks ke tengah */
+        text-align: center; /* Mengatur teks ke tengah */
+      }
+
+      .leftText .well {
+        font-size: 20px;
+        width: 30%;
+    }
+
+    
+      .leftImage {
+        width: 80px; /* Ukuran gambar lebih kecil di perangkat mobile */
+        height: 80px; /* Ukuran gambar lebih kecil di perangkat mobile */
+        margin-bottom: 20px; /* Ruang antara gambar dan teks di perangkat mobile */
+      }
+    
+      .rightImage,
+      .rightImage1 {
+        width: 30%; /* Lebar gambar di perangkat mobile */
+        height: auto; /* Tinggi otomatis */
+      }
+  }
