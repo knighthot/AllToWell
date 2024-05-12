@@ -100,11 +100,13 @@ export default function Home() {
           <AnimeHoverEffect style={{ flex: 1 }} />
     <TugasKelompok/>
           <Kelompok/>
+          <TugasIndividu/>
+          <Individu/>
           {/*  
          
          
-          <TugasIndividu/>
-          <Individu/>
+          
+          
           <TagSummary/>
           <Summary/>	 */}
         </div>

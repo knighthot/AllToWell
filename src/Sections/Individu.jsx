@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoIosArrowDropdown, IoIosArrowDropup } from 'react-icons/io';
-
+import '../components/Individu.css';
 // Video component to render videos
 const Video = ({ source }) => {
   return (
@@ -12,7 +12,7 @@ const Video = ({ source }) => {
         src={source}
         frameborder="0"
         allow="autoplay; encrypted-media"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );
@@ -27,38 +27,45 @@ const Individu = ({ number, Nama, backgroundColor, namatugas, pdfLink, videoLink
 
   return (
     <div
-      style={{
-        width: '100%',
-        border: '1px solid black',
-        cursor: 'pointer',
-        marginBottom: 20,
-        background: backgroundColor,
-        borderRadius: '25px',
-        transition: 'all 0.6s',
-        height: isExpanded ? 'auto' : '70px',
-        padding: isExpanded ? '30px' : '20px',
-      }}
-      onClick={handleToggleExpand}
-    >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottomWidth: isExpanded ? 1 : 0, borderColor: 'black', paddingBottom: isExpanded ? 10 : 0 }}>
-        {isExpanded ? number && <h3 style={{ marginLeft: 30, fontSize: 24, fontWeight: 'bold', color: '#555' }}> <span style={{ color: 'black' }}>{Nama}</span></h3> : number && <h3 style={{ marginLeft: 30, fontSize: 24, fontWeight: 'bold', color: '#555' }}>0{number}. <span style={{ color: 'black' }}>{Nama}</span></h3>  }
-        {isExpanded ? <IoIosArrowDropup size={30} /> : <IoIosArrowDropdown size={30} />}
-      </div>
-      {isExpanded && (
-        <div> 
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} > 
-            {pdfLink.map((link, index) => (
-              <div key={index} style={{ marginBottom: 50,backgroundColor:'white',width:800,justifyContent:'center',display: 'flex', flexDirection: 'column', alignItems: 'center',borderRadius:20,marginTop:50 }}>
-                <h4 style={{margin:20,color:'black',textDecoration:'underline'}}>{namatugas[index]}</h4>
-                <embed style={{ margin: 'auto' }} src={link} type="application/pdf" width="50%" height="600px" />
-              </div>
-            ))}
-            {/* Render videos */}
-            {videoLink && <Video source={videoLink} />}
-          </div>
-        </div>
+    className="individu-container"
+    style={{
+      background: backgroundColor,
+      height: isExpanded ? 'auto' : '70px',
+      padding: isExpanded ? '30px' : '20px',
+    }}
+    onClick={handleToggleExpand}
+  >
+    <div className="individu-details">
+      {number && (
+        <h3 className="individu-number">
+          {isExpanded ? `${number}.` : `0${number}.`}{' '}
+          <span className="individu-name">{Nama}</span>
+        </h3>
       )}
+      <div className="individu-toggle">
+        {isExpanded ? <IoIosArrowDropup className="individu-toggle-icon" size={30} /> : <IoIosArrowDropdown className="individu-toggle-icon" size={30} />}
+      </div>
     </div>
+    {isExpanded && (
+      <div className="individu-expanded">
+        <div className="pdf-container">
+          {pdfLink.map((link, index) => (
+            <div className="pdf-item" key={index}>
+              <h4>{namatugas[index]}</h4>
+              <div className="pdf-link">
+                <embed src={link} type="application/pdf" />
+              </div>
+            </div>
+          ))}
+           {videoLink && 
+        <div className="video-item">
+          <Video source={videoLink} />
+        </div>
+      }
+        </div>
+      </div>
+    )}
+  </div>
   );
 }
 
